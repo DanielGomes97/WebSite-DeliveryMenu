@@ -1,0 +1,281 @@
+@charset "utf-8";
+
+/* VARIAVEIS */
+:root{
+	--black: #000;
+	--black-light: #f00;
+	--h1-color: #393C41;
+	--h2-color: #6E7378;
+	--btn-dark-bg: rgba(23, 26, 32, 0.8);
+	--btn-light-bg: rgba(255, 255, 255, 0.65);
+	--btn-dark-color: #fff;
+	--btn-light-color: #000;
+}
+/*como usar a variavel: var(--black-light);*/
+
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-boz-sizing: border-box;
+       -moz-boz-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	font-family: Arial;
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+	font-family: 'GothamMedium', Helvetica, Arial;
+	font-size: 14px;
+	margin: 0;
+}
+
+.container-flex{
+	max-width: 990px;
+	margin: 0 auto;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+.container{
+	max-width: 960px;
+	margin: 0 auto;
+}
+header{
+	height: 100px;
+	background: #333;
+}
+.logo, .menu{
+	display: flex;
+	align-items: center;
+}
+.logo img{
+	width: 150px;
+}
+
+.menu ul{
+	display: flex;
+}
+.menu ul li{
+	list-style: none;
+	margin: 0 5px;
+}
+.menu a{
+	display: block;
+	text-decoration: none;
+	padding: 10px;
+	text-transform: uppercase;
+	border-radius: 3px;
+	color: #727272;
+}
+.menu a:hover{
+	background: #39aae1;
+	color: #fff;
+}
+
+nav .active a{
+	background: #39aae1;
+	color: #fff; 
+}
+
+
+/*home*/
+main{
+	background: #ddd;
+}
+.banner{
+	background-image: url('../img/images.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 500px;
+	opacity: 0.7;
+}
+
+.texto-banner{
+	text-align: center;
+}
+.texto-banner h2{
+	font-size: 48px;
+	color: #ff0;
+	padding: 50px;
+	padding-top: 150px;
+}
+.texto-banner p{
+	font-size: 20px;
+	padding-top: 30px;
+	color: #f00;
+}
+
+
+.botoes-opcaoProduto{
+	width: 100%;
+	height: auto;
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: space-between;
+}
+.botoes-opcaoProduto input{
+	text-align: center;
+	width: 188px;
+	padding: 12px;
+	cursor: pointer;
+	background: #008;
+	color: #fff;
+	border-radius: 10px;
+	border: none;
+}
+
+
+.card-geral{
+	width: 100%;
+	display: flex;
+	height: auto;
+	margin-bottom: 10px;
+}
+.card-geral h1{
+	font-size: 20px;
+	color: #000;
+	text-align: center;
+	padding: 20px;
+	text-transform: uppercase;
+}
+.card-menu{
+	flex: 1;
+	margin: 20px 0;
+}
+.titulo-cat{
+
+	text-align: center;
+	font-size: 17px;
+	color: #fff;
+	padding: 5px 0;
+	background: #333;
+	border-radius: 10px;
+	margin: 0 10px 10px 10px;
+}
+.card-item h3{
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	color: #000;
+	padding: 5px 0;
+	background: #ddd;
+
+}
+.card-item {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.card-item img{
+	width: 40%;
+	border-radius: 30px;
+}
+.item1 img{
+	background-image: url(../assets/img/menu/batata0.png);
+}
+
+.card-produto{
+	flex: 4;
+	height: auto;
+	margin: 20px 0;
+}
+.card-produto ul{
+	height: auto;	
+	text-align: center;
+}
+.card-produto ul li{
+	/*width: 310px;*/
+	max-width: 31%;
+	display: inline-block;
+	padding-bottom: 15px;
+    background: #eee;
+	border-radius: 10px;
+	vertical-align: top;
+	list-style: none;
+	margin: 5px 5px 20px 5px;
+	text-align: center;
+}
+.card-produto ul li h3{
+	color: #fff;
+	font-size: 18px;
+	padding: 10px 0;
+	background: #4687FF;
+	border-radius: 10px 10px 0 0;
+	width: 100%;
+}
+.card-produto figcaption{
+	padding: 10px 4px;
+}
+.card-produto img{
+	max-width: 100%;
+	height: 150px;
+	margin: 0px 0;
+}
+.card-produto span{
+	color: #f00;
+	font-size: 25px;
+	padding: 25px 0px;
+}
+.card-produto input{
+	width: 90%;
+	height: auto;
+	margin-top: 10px;
+	padding: 10px;
+	cursor: pointer;
+	background: #3F99FD;
+	color: #fff;
+	font-size: 17px;
+	border-radius: 10px;
+	border: none;
+}
+.card-produto input:hover{
+	/*color: #3F99FD;
+	background: #fff;*/
+	background: #3F89FF;
+	font-weight: 500px;
+}
+
+/*.card-produto h2{}*/
+
+
+
+
+footer{
+
+	background: #333;/**/
+}
+.bloco-geral{
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0;
+	color: #fff;
+}
+.bloco-contato, .bloco-endereco, .bloco-social{
+	flex: 1;
+}
+.bloco-contato h1, .bloco-endereco h1, .bloco-social h1, .bloco-pagamento h1{
+	color: #ff0;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+.bloco-pagamento h1{
+	padding-top: 20px;
+}
+
+.bloco-contato p, .bloco-endereco p, .bloco-social p{
+	padding: 0 0 10px 0;
+}
+
+
+.copyright-f{
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+	padding: 20px 0;
+}

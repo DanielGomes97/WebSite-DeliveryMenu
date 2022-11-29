@@ -10,7 +10,7 @@
 	<section>
 		<?php include_once("header.php") ?>
 	</section>
-	
+
 	<section>
 		<?php include_once("home.php") ?>
 	</section>
@@ -18,5 +18,7 @@
 	<section>
 		<?php include_once("footer.php") ?>
 	</section>
+
+	<script src="assets/js/main.js"></script>
 </body>
 </html>

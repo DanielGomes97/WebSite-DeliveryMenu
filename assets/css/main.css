@@ -242,11 +242,38 @@ main{
 
 /*.card-produto h2{}*/
 
-
-
+.card-carrinhoPrincipal{
+	width: 500px;
+	height: 500px;
+	background: #007;
+	color: #fff;
+	float: right;
+	margin-right: 50px;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+.card-titulo{
+	background: #fff;
+	padding: 10px 0px;
+	border-radius: 10px 10px 0 0;
+	display: flex;
+	align-items: center;
+}
+.titulo-carrinho{
+	color: #000;
+	width: 100%;
+}
+.btn-closeCarrinho{
+	width: 50px;
+	color: #009;
+	text-align: left;
+	padding: 0 20px;
+	font-size: 22px;
+	cursor: pointer;
+	user-select: none;
+}
 
 footer{
-
 	background: #333;/**/
 }
 .bloco-geral{

@@ -5,7 +5,47 @@
 			<p>Nossos lanches estão fazendo sucesso, aproveite as promoções</p>
 		</div>
 	</div>
-
+	<div class="card-carrinhoPrincipal">
+		<div class="card-titulo">
+			<h3 class="btn-closeCarrinho">X</h3>
+			<!--<img src="assets/img/img1.jpg" width="100px"/>-->
+			<h2 class="titulo-carrinho">Carrinho de Compras</h2>
+		</div>
+		<div class="card-items">
+			<table width="100%" border="0">
+				<thead>
+					<tr>
+						<th>Foto</th>
+						<th>Descrição do produto</th>
+						<th>Quant</th>
+						<th>Valor</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>f</td>
+						<td>Nome</td>
+						<td>2</td>
+						<td>29,50</td>
+					</tr>
+					<tr>
+						<td colspan="3">Desconto (-)</td>
+						<td>R$: 10,00</td>
+					</tr>
+					<tr>
+						<td colspan="3">Valor total</td>
+						<td>R$: 89,99</td>
+					</tr>
+				</tbody>
+			</table>
+			<h3>Nome Produto</h3>
+			<p>Quantidade</p>
+		</div>
+		<div>
+			<button value="">Finalizar compra</button>
+			<button value="">Continuar comprando</button>
+		</div>
+	</div>
 
 	<div class="container">
 		<div class="card-geral">

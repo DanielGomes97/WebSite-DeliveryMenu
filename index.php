@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 		<title>Cardapio Online</title>
 	</head>
+	
 	<body>
 		<section>
 			<?php include_once("header.php") ?>

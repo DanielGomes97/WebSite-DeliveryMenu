@@ -9,26 +9,24 @@
 		<div class="card-titulo">
 			<h3 class="btn-closeCarrinho">X</h3>
 			<!--<img src="assets/img/img1.jpg" width="100px"/>-->
-			<h2 class="titulo-carrinho">Carrinho de Compras</h2>
+			<h2 class="titulo-carrinho">Meu Carrinho de Compras</h2>
 		</div>
 		<div class="card-items">
-			<table width="100%" border="0">
-				<thead>
+			<table width="100%" border="0" class="table-cart">
+				<thead class="table-headerCart">
 					<tr>
-						<th>Foto</th>
 						<th>Descrição do produto</th>
 						<th>Quant</th>
 						<th>Valor</th>
 					</tr>
 				</thead>
-				<tbody>
+				<tbody class="table-bodyCart">
 					<tr>
-						<td>f</td>
 						<td>Nome</td>
 						<td>2</td>
-						<td>29,50</td>
+						<td>R$: 29,50</td>
 					</tr>
-					<tr>
+					<tr class="table-bodyCarSubValue">
 						<td colspan="3">Desconto (-)</td>
 						<td>R$: 10,00</td>
 					</tr>

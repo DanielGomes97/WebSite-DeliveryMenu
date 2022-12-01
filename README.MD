@@ -1,0 +1,1 @@
+Desenvolvendo o site Delivery para estudo, iniciando com HTML e CSS, depois iniciar o JavaScript e finalizando com PHP e MySQL.

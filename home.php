@@ -11,37 +11,44 @@
 			<!--<img src="assets/img/img1.jpg" width="100px"/>-->
 			<h2 class="titulo-carrinho">Meu Carrinho de Compras</h2>
 		</div>
-		<div class="card-items">
-			<table width="100%" border="0" class="table-cart">
+		<div class="card-items containerCart">
+			<table width="100%" class="table-cart">
 				<thead class="table-headerCart">
 					<tr>
-						<th>Descrição do produto</th>
+						<th>Produto</th>
 						<th>Quant</th>
 						<th>Valor</th>
+						<th>Remover</th>
 					</tr>
 				</thead>
 				<tbody class="table-bodyCart">
-					<tr>
+					<tr class="textAlinhadoCenter">
 						<td>Nome</td>
 						<td>2</td>
 						<td>R$: 29,50</td>
+						<td>X</td>
 					</tr>
-					<tr class="table-bodyCarSubValue">
+					<tr class="textAlinhadoCenter">
+						<td>Nome</td>
+						<td>2</td>
+						<td>R$: 29,50</td>
+						<td>X</td>
+					</tr>
+
+					<tr class="table-bodyCarSubValue Fontbold">
 						<td colspan="3">Desconto (-)</td>
-						<td>R$: 10,00</td>
+						<td class="table-bodyCarValueGreen">R$: 10,00</td>
 					</tr>
-					<tr>
+					<tr class="Fontbold">
 						<td colspan="3">Valor total</td>
-						<td>R$: 89,99</td>
+						<td class="table-bodyCarValueRed">R$: 89,99</td>
 					</tr>
 				</tbody>
 			</table>
-			<h3>Nome Produto</h3>
-			<p>Quantidade</p>
 		</div>
-		<div>
-			<button value="">Finalizar compra</button>
-			<button value="">Continuar comprando</button>
+		<div class="btn-cartDiv">
+			<button value="" class="btn-carrinho btn-ColorActive">Finalizar compra</button>
+			<button value="" class="btn-carrinho btn-ColorDefault">Continuar comprando</button>
 		</div>
 	</div>
 

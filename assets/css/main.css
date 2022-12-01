@@ -243,15 +243,18 @@ main{
 /*.card-produto h2{}*/
 
 .card-carrinhoPrincipal{
-	width: 400px;
+	position: fixed;
+	top: 50px;
+	right: 0;
+	width: 22%;
 	padding-bottom: 10px;
 	color: #000;
-	float: right;
-	margin-right: 50px;
+	margin-right: 20px;
 	margin-top: 20px;
 	border-radius: 10px;
-	background-color: #3F99FD;
+	background-color: rgb(195, 217, 238);
 	border: 1px solid #bbb;
+
 }
 .card-titulo{
 	background: #fff;
@@ -277,22 +280,75 @@ main{
 
 .table-headerCart tr{
 	width: 100%;
+	
 }
 .table-headerCart tr th{
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: bold;
-	padding-bottom: 10px;
-	padding-top: 5px;
+	padding: 10px;
 	text-transform: uppercase;
+	text-align: center;
+	border: 0px solid #000;
+	letter-spacing: 2px;
 }
 .table-bodyCart tr td{
 	padding-bottom: 5px;
-	text-align: center;
+
 }
 
 .table-bodyCarSubValue td{
-	text-align:start;
 	padding-top: 20px;
+}
+.table-bodyCarValueRed{
+	color: rgb(187, 37, 37);
+	font-size: 16px;
+	font-weight: bold;
+}
+.table-bodyCarValueGreen{
+	color: rgb(56, 136, 36);
+	font-size: 16px;
+	font-weight: bold;
+}
+.Fontbold{
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+.textAlinhadoCenter{
+	text-align: center;
+}
+.btn-cartDiv{
+	text-align: center;
+	margin-top: 10px;
+}
+.containerCart{
+	width: 90%;
+	margin: 0 auto;;
+}
+.btn-carrinho{
+	width: 90%;
+	text-align: center;
+	height: 30px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.btn-ColorActive{
+	background: #393C41;
+	color: #fff;
+	height: 40px;
+}
+.btn-ColorActive:hover{
+	background: #45474b;
+	color: #fff;
+}
+.btn-ColorDefault{
+	background: #fff;
+	color: #393c41;
+}
+.btn-ColorDefault:hover{
+	background: #eee;
+	color: #393c41;
 }
 
 footer{

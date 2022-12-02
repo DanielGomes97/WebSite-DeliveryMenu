@@ -16,35 +16,33 @@
 				<thead class="table-headerCart">
 					<tr>
 						<th>Produto</th>
-						<th>Quant</th>
 						<th>Valor</th>
-						<th>Remover</th>
+						<th>Qts</th>
 					</tr>
 				</thead>
 				<tbody class="table-bodyCart">
 					<tr class="textAlinhadoCenter">
-						<td>Nome</td>
-						<td>2</td>
+						<td>Hamburguer Simples</td>
 						<td>R$: 29,50</td>
-						<td>X</td>
+						<td class="table-bodyCartbtn-quant"><button type="number">-</button> <span>1</span> <button type="number">+</button></td>
 					</tr>
 					<tr class="textAlinhadoCenter">
 						<td>Nome</td>
-						<td>2</td>
 						<td>R$: 29,50</td>
-						<td>X</td>
+						<td class="table-bodyCartbtn-quant"><button type="number">-</button> <span>1</span> <button type="number">+</button></td>
 					</tr>
-
-					<tr class="table-bodyCarSubValue Fontbold">
-						<td colspan="3">Desconto (-)</td>
-						<td class="table-bodyCarValueGreen">R$: 10,00</td>
-					</tr>
-					<tr class="Fontbold">
-						<td colspan="3">Valor total</td>
-						<td class="table-bodyCarValueRed">R$: 89,99</td>
+					<tr class="textAlinhadoCenter">
+						<td>Nome do hamburg</td>
+						<td>R$: 829,50</td>
+						<td class="table-bodyCartbtn-quant"><button type="number">-</button> <span>1</span> <button type="number">+</button></td>
 					</tr>
 				</tbody>
 			</table>
+			<div class="CarValue">
+				<h3>SubTotal:  <span class="">R$: 99,99</span></h3>
+				<h3>Desconto:  <span class="Green"> -R$: 10,00</span></h3>
+				<h2>Valor total: <span class="Red">R$: 89,99</span></h2>
+			</div>
 		</div>
 		<div class="btn-cartDiv">
 			<button value="" class="btn-carrinho btn-ColorActive">Finalizar compra</button>

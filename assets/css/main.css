@@ -347,7 +347,9 @@ main{
 .table-bodyCartbtn-quant button{
 	width: 15px;
 }
-
+.table-bodyCartbtn-quant label{
+	padding: 0px 15px;
+}
 footer{
 	background: #333;/**/
 }

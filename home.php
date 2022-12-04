@@ -8,7 +8,6 @@
 	<div class="card-carrinhoPrincipal">
 		<div class="card-titulo">
 			<h3 class="btn-closeCarrinho">X</h3>
-			<!--<img src="assets/img/img1.jpg" width="100px"/>-->
 			<h2 class="titulo-carrinho">Meu Carrinho de Compras</h2>
 		</div>
 		<div class="card-items containerCart">

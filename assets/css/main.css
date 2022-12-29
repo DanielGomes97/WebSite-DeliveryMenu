@@ -2,17 +2,22 @@
 
 /* VARIAVEIS */
 :root{
+	--primary: #fe724c;
+	--secundary: #ffc529;
+	--light: #d7d7d7;
+	--background: #272d2f;
 	--black: #000;
-	--black-light: #f00;
-	--h1-color: #393C41;
-	--h2-color: #6E7378;
-	--btn-dark-bg: rgba(23, 26, 32, 0.8);
-	--btn-light-bg: rgba(255, 255, 255, 0.65);
-	--btn-dark-color: #fff;
-	--btn-light-color: #000;
+	--red: #f00;
+	--white: #fff;
 }
 /*como usar a variavel: var(--black-light);*/
 
+/*	Fonte: Gilroy
+	yellow	: #ff0529
+	red	: #fe724c	
+	black	: #272d2f
+	white	: #d7d7d7   
+*/
 /*reset*/
 *{
     margin: 0;
@@ -48,7 +53,7 @@ body{
 }
 header{
 	height: 100px;
-	background: #333;
+	background: var(--background);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -61,6 +66,10 @@ header{
 }
 .logo img{
 	width: 150px;
+
+}
+.logo img:hover{
+	width: 155px;
 }
 
 .menu ul{
@@ -76,66 +85,53 @@ header{
 	padding: 10px;
 	text-transform: uppercase;
 	border-radius: 3px;
-	color: #727272;
+	color: var(--secundary);
 }
 .menu a:hover{
-	background: #39aae1;
-	color: #fff;
+	background: var(--primary);
+	color: var(--white);
 }
 
 nav .active a{
-	background: #39aae1;
-	color: #fff; 
+	background: var(--primary);
+	color: var(--white);
 }
 
-
-/*home*/
+/*==================================================================
+						PAGE HOME
+===================================================================*/
 main{
-	background: #ddd;
+	color: var(--light);
 	margin-top: 100px;
 }
 .banner{
 	background-image: url('../img/images.jpg');
 	background-position: center;
 	background-size: cover;
-	height: 500px;
-	opacity: 0.7;
+	height: 400px;
+	filter: blur(5px);
+	opacity: 0.8;
 }
 
 .texto-banner{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	right: 0;
 	text-align: center;
 }
 .texto-banner h2{
 	font-size: 48px;
-	color: #ff0;
+	color: var(--secundary);
 	padding: 50px;
 	padding-top: 150px;
+	opacity: 1;
 }
 .texto-banner p{
 	font-size: 20px;
 	padding-top: 30px;
-	color: #f00;
+	color: var(--red);
 }
-
-
-.botoes-opcaoProduto{
-	width: 100%;
-	height: auto;
-	margin-bottom: 5px;
-	display: flex;
-	justify-content: space-between;
-}
-.botoes-opcaoProduto input{
-	text-align: center;
-	width: 188px;
-	padding: 12px;
-	cursor: pointer;
-	background: #008;
-	color: #fff;
-	border-radius: 10px;
-	border: none;
-}
-
 
 .card-geral{
 	width: 100%;
@@ -145,7 +141,7 @@ main{
 }
 .card-geral h1{
 	font-size: 20px;
-	color: #000;
+	color: var(--background);
 	text-align: center;
 	padding: 20px;
 	text-transform: uppercase;
@@ -155,27 +151,30 @@ main{
 	margin: 20px 0;
 }
 .titulo-cat{
-
 	text-align: center;
 	font-size: 17px;
-	color: #fff;
+	color: var(--white);
 	padding: 5px 0;
-	background: #333;
-	border-radius: 10px;
-	margin: 0 10px 10px 10px;
+	background: var(--primary);
+	border-radius: 5px;
+	margin: 20px 0;
 }
 .card-item h3{
 	width: 100%;
 	text-align: center;
 	font-size: 18px;
-	color: #000;
+	color: var(--background);
 	padding: 5px 0;
-	background: #ddd;
+	background: var(--white);
 
 }
 .card-item {
 	text-align: center;
 	margin-bottom: 10px;
+}
+.card-item img:hover{
+	background: #eee;
+	opacity: 0.8;
 }
 .card-item img{
 	width: 40%;
@@ -195,11 +194,10 @@ main{
 	text-align: center;
 }
 .card-produto ul li{
-	/*width: 310px;*/
 	max-width: 31%;
 	display: inline-block;
 	padding-bottom: 15px;
-    background: #eee;
+    background: var(--white);
 	border-radius: 10px;
 	vertical-align: top;
 	list-style: none;
@@ -207,15 +205,17 @@ main{
 	text-align: center;
 }
 .card-produto ul li h3{
-	color: #fff;
-	font-size: 18px;
-	padding: 10px 0;
-	background: #4687FF;
+	color: var(--white);
+	font-size: 17px;
+	padding: 8px 0;
+	background: var(--secundary);
 	border-radius: 10px 10px 0 0;
 	width: 100%;
+	margin-bottom: 2px;
 }
 .card-produto figcaption{
 	padding: 10px 4px;
+	color: var(--background);
 }
 .card-produto img{
 	max-width: 100%;
@@ -223,30 +223,26 @@ main{
 	margin: 0px 0;
 }
 .card-produto span{
-	color: #f00;
+	color: var(--red);
 	font-size: 25px;
 	padding: 25px 0px;
 }
 .card-produto input{
-	width: 90%;
+	width: 100%;
 	height: auto;
 	margin-top: 10px;
 	padding: 10px;
 	cursor: pointer;
-	background: #3F99FD;
-	color: #fff;
+	background: var(--primary);
+	color: var(--white);
 	font-size: 17px;
-	border-radius: 10px;
+	border-radius: 5px;
 	border: none;
 }
 .card-produto input:hover{
-	/*color: #3F99FD;
-	background: #fff;*/
-	background: #3F89FF;
+	background: var(--secundary);
 	font-weight: 500px;
 }
-
-/*.card-produto h2{}*/
 
 .card-carrinhoPrincipal{
 	position: fixed;
@@ -254,7 +250,7 @@ main{
 	right: 0;
 	width: 22%;
 	padding-bottom: 10px;
-	color: #000;
+	color: var(--black);
 	margin-right: 20px;
 	margin-top: 20px;
 	border-radius: 5px;
@@ -264,21 +260,21 @@ main{
 }
 .card-titulo{
 	background: #333;
-	/*padding: 10px 5px;*/
+	padding: 10px 5px;
+	margin: -1px 0 0 -1px;
 	text-align: center;
 	border-radius: 5px 5px 0 0;
 	display: flex;
 	align-items: center;
-	border-bottom: 1px solid #ccc;
 }
 .titulo-carrinho{
-	color: #fff;
+	color: var(--white);
 	width: 100%;
 	padding-right: 30px;
 }
 .btn-closeCarrinho{
 	width: 50px;
-	color: rgb(255, 255, 255);
+	color: var(--white);
 	text-align: left;
 	padding-left: 15px;
 	font-size: 22px;
@@ -294,8 +290,8 @@ main{
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
-	border: 0px solid #000;
-	letter-spacing: 2px;
+	border: 0px solid var(--black);
+	letter-spacing: 3px;
 }
 
 .CarValue{
@@ -303,7 +299,7 @@ main{
 	padding-bottom: 5px;
 }
 .Red{
-	color: rgb(187, 37, 37);
+	color: var(--red);
 }
 .Green{
 	color: rgb(56, 136, 36);
@@ -331,15 +327,15 @@ main{
 }
 .btn-ColorActive{
 	background: #393C41;
-	color: #fff;
+	color: var(--white);
 	height: 40px;
 }
 .btn-ColorActive:hover{
 	background: #45474b;
-	color: #fff;
+	color: var(--white);
 }
 .btn-ColorDefault{
-	background: #fff;
+	background: var(--white);
 	color: #393c41;
 }
 .btn-ColorDefault:hover{
@@ -359,13 +355,13 @@ footer{
 	display: flex;
 	justify-content: space-between;
 	padding: 30px 0;
-	color: #fff;
+	color: var(--white);
 }
 .bloco-contato, .bloco-endereco, .bloco-social{
 	flex: 1;
 }
 .bloco-contato h1, .bloco-endereco h1, .bloco-social h1, .bloco-pagamento h1{
-	color: #ff0;
+	color: var(--secundary);
 	font-size: 18px;
 	text-transform: uppercase;
 	padding-bottom: 20px;
@@ -380,7 +376,7 @@ footer{
 
 
 .copyright-f{
-	color: #fff;
+	color: var(--white);
 	font-size: 15px;
 	text-align: center;
 	padding: 20px 0;

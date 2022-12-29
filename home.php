@@ -1,14 +1,14 @@
 <main>
 	<div class="banner">
-		<div class="container texto-banner">
+	</div>
+	<div class="container texto-banner">
 			<h2>PROMOÇÃO IMPERDIVEL, FAÇA JÁ SEU PEDIDO </h2>
 			<p>Nossos lanches estão fazendo sucesso, aproveite as promoções</p>
 		</div>
-	</div>
 	<div class="card-carrinhoPrincipal">
 		<div class="card-titulo">
 			<h3 class="btn-closeCarrinho">X</h3>
-			<h2 class="titulo-carrinho">Meu Carrinho de Compras</h2>
+			<h2 class="titulo-carrinho">Meu Carrinho</h2>
 		</div>
 		<div class="card-items containerCart">
 			<table width="100%" class="table-cart">
@@ -50,9 +50,12 @@
 	</div>
 
 	<div class="container">
+		<div class="titulo-cat">
+			<h3>Catalogos</h3>
+		</div>
+
 		<div class="card-geral">
 			<div class="card-menu">
-				<h2 class="titulo-cat">Categoria</h2>
 				<div class="card-item">
 					<h3>Hamburguers</h3>
 					<a href="#"><img src="assets/img/menu/hamburg1.png"></a>
@@ -80,7 +83,6 @@
 
 			</div>
 			<div class="card-produto">
-				<h2 class="titulo-cat">Lista de produtos</h2>
 				<ul>
 					<li>
 						<figure>
@@ -93,7 +95,6 @@
 						</figure>
 						<span>R$ 32,99</span>
 						<form action>
-							<input type="submit" value="Comprar" name="">
 							<input type="submit" value="Adicionar ao Carrinho" name="">
 						</form>
 					</li>
@@ -108,7 +109,6 @@
 						</figure>
 						<span>R$ 18,00</span>
 						<form action>
-							<input type="submit" value="Comprar" name="">
 							<input type="submit" value="Adicionar ao Carrinho" name="">
 						</form>
 					</li>
@@ -123,7 +123,6 @@
 						</figure>
 						<span>R$ 21,99</span>
 						<form action>
-							<input type="submit" value="Comprar" name="">
 							<input type="submit" value="Adicionar ao Carrinho" name="">
 						</form>
 					</li>
@@ -133,12 +132,11 @@
 							<h3>Titulo produto</h3>
 								<img src="assets/img/lanche/img4.jpg" alt="produto1">
 							<figcaption>
-								Descrição do Produto
+								Descrição do Produtoasdasdasdasdasdsadasdasdasd
 							</figcaption>
 						</figure>
 						<span>R$ 28,99</span>
 						<form action>
-							<input type="submit" value="Comprar" name="">
 							<input type="submit" value="Adicionar ao Carrinho" name="">
 						</form>
 					</li>
@@ -154,7 +152,6 @@
 						</figure>
 						<span>R$ 28,99</span>
 						<form action>
-							<input type="submit" value="Comprar" name="">
 							<input type="submit" value="Adicionar ao Carrinho" name="">
 						</form>
 					</li>
